@@ -30,7 +30,7 @@
 	
 	<properties>
 		<openMRSVersion>1.9.2</openMRSVersion>
-		<metadatadeployVersion>1.3-SNAPSHOT</metadatadeployVersion>
+		<metadatadeployVersion>1.3</metadatadeployVersion>
 		<jacksonVersion>1.5.0</jacksonVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
