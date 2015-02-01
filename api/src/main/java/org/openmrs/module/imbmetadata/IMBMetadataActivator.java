@@ -13,9 +13,10 @@
  */
 package org.openmrs.module.imbmetadata;
 
-import org.apache.commons.logging.Log; 
+import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openmrs.module.ModuleActivator;
+import org.openmrs.module.imbmetadata.deploy.MetadataManager;
 
 /**
  * This class contains the logic that is run every time this module is either started or stopped.
@@ -50,6 +51,7 @@ public class IMBMetadataActivator implements ModuleActivator {
 	 */
 	public void started() {
 		log.info("IMB Metadata Module started");
+		MetadataManager.installBundles();
 	}
 	
 	/**

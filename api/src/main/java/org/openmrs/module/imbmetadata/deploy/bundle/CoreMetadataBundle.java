@@ -16,6 +16,7 @@ package org.openmrs.module.imbmetadata.deploy.bundle;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.openmrs.module.imbmetadata.reference.LocationTags;
 import org.openmrs.module.imbmetadata.reference.Locations;
 import org.openmrs.module.metadatadeploy.bundle.AbstractMetadataBundle;
 import org.springframework.stereotype.Component;
@@ -35,10 +36,23 @@ public class CoreMetadataBundle extends ImbMetadataBundle {
 	 */
 	@Override
 	public void install() {
-
 		log.info("Installing Core Metadata");
+		installLocations();
+	}
 
-		install(location("Unknown Location", "Unknown Location", Locations.UNKNOWN));
+	public void installLocations() {
 
+		log.info("Installing Location Tags");
+
+		install(LocationTags.getTemplate(LocationTags.LOGIN_LOCATION));
+		install(LocationTags.getTemplate(LocationTags.ADMISSION_LOCATION));
+		install(LocationTags.getTemplate(LocationTags.TRANSFER_LOCATION));
+		install(LocationTags.getTemplate(LocationTags.VISIT_LOCATION));
+
+		log.info("Installing Locations");
+
+		install(location("Unknown Location", "Unknown Location", Locations.UNKNOWN, null, LocationTags.ALL));
+
+		// TODO: For now, set unknown location as login, etc.  Evolve this as needed and add any unit tests needed to confirm set up correctly
 	}
 }
