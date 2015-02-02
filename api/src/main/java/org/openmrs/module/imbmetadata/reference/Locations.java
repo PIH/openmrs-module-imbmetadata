@@ -43,4 +43,7 @@ public class Locations {
 	public static final String RETIRED_RUHENGERI = "a2e1946e-26fe-102b-80cb-0017a47871b2";
 	public static final String RETIRED_RWANDA = "a2e1925c-26fe-102b-80cb-0017a47871b2";
 	public static final String RETIRED_TEST_LOCATION = "2f72a28a-1379-4eca-928e-7732fa624282";
+
+    //RwandaTest metadata
+    public static final String INMAN_HOSPITAL="8d6c993e-c2cc-11de-8d13-0010c6dffd0f";
 }
