@@ -119,6 +119,11 @@
 						<encoding>UTF-8</encoding>
 					</configuration>
 				</plugin>
+                <plugin>
+                    <groupId>org.openmrs.maven.plugins</groupId>
+                    <artifactId>distrotools-maven-plugin</artifactId>
+                    <version>0.7-SNAPSHOT</version>
+                </plugin>
 				<plugin>
 					<groupId>org.openmrs.maven.plugins</groupId>
 					<artifactId>maven-openmrs-plugin</artifactId>

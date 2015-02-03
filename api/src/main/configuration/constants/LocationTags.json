@@ -1,0 +1,25 @@
+{
+  "LocationTags": {
+    "LOGIN_LOCATION": {
+      "UUID": "b8bbf83e-645f-451f-8efe-a0db56f09676",
+      "NAME": "Visit Location",
+      "DESCRIPTION": "When a user logs in and chooses a session location, they may only choose one with this tag"
+    },
+    "VISIT_LOCATION": {
+      "UUID": "0967d73d-f3c9-492b-abed-356478610a94",
+      "NAME": "Login Location",
+      "DESCRIPTION": "Visits are only allowed to happen at locations tagged with this location tag or at locations that descend from a location tagged with this tag."
+    },
+    "ADMISSION_LOCATION": {
+      "UUID": "f5b9737b-14d5-402b-8475-dd558808e172",
+      "NAME": "Admission Location",
+      "DESCRIPTION": "Patients may only be admitted to inpatient care in a location with this tag"
+    },
+    "TRANSFER_LOCATION": {
+      "UUID": "9783aba6-df7b-4969-be6e-1e03e7a08965",
+      "NAME": "Transfer Location",
+      "DESCRIPTION": "Patients may only be transfer to inpatient care in a location with this tag"
+    },
+    "ALL": ["LOGIN_LOCATION.UUID", "VISIT_LOCATION.UUID", "ADMISSION_LOCATION.UUID", "TRANSFER_LOCATION.UUID"]
+  }
+}
