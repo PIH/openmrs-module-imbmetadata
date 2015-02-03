@@ -17,6 +17,7 @@ package org.openmrs.module.imbmetadata.deploy.bundle;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openmrs.GlobalProperty;
+import org.openmrs.OpenmrsObject;
 import org.openmrs.OrderType;
 import org.openmrs.api.AdministrationService;
 import org.openmrs.api.context.Context;
@@ -42,6 +43,17 @@ public abstract class ImbMetadataBundle extends AbstractMetadataBundle {
 
 	@Autowired
 	PlatformTransactionManager platformTransactionManager;
+
+	/**
+	 * The standard uninstall method in metadata deploy will fail if an object doesn't yet exist (it will try to recreate it)
+	 * Here we are fixing that by first ensuring that the object is installed to the DB before retiring it.
+	 * This will make sure that all of the metadata across all of our servers is consistent
+	 */
+	@Override
+	protected <T extends OpenmrsObject> void uninstall(T outgoing, String reason) {
+		T installed = super.install(outgoing);
+		super.uninstall(installed, reason);
+	}
 
 	/**
 	 * Setting multiple GPs is much faster in a single transaction
