@@ -1,0 +1,112 @@
+{
+  "Locations": {
+    "BUKORA_HEALTH_CENTER": {
+      "UUID": "777984f1-fbee-4de7-aadf-39ac36a89680"
+    },
+    "CYARUBARE_HEALTH_CENTER": {
+      "UUID": "885f137a-7ca4-4996-b111-4c76fe1ccb38"
+    },
+    "GAHARA_HEALTH_CENTER": {
+      "UUID": "8f6d0fd0-8af9-49c3-bfb1-f6fc608ed040"
+    },
+    "GASHONGORA_HEALTH_CENTER": {
+      "UUID": "bd131526-775d-4021-9f11-e3cb3ec225b5"
+    },
+    "KABARONDO_HEALTH_CENTER": {
+      "UUID": "39619783-d4ae-4b08-9ef3-a35bea553c3e"
+    },
+    "KABUYE_HEALTH_CENTER": {
+      "UUID": "9ce5d017-e724-4576-9e2b-c71a2287bc41"
+    },
+    "KARAMA_HEALTH_CENTER": {
+      "UUID": "1460de5b-566e-4ea4-a0d9-8312b0a2ce22"
+    },
+    "KIBUNGO_PRISON": {
+      "UUID": "3f77de86-20cf-4b70-821d-44649530f97c"
+    },
+    "KIREHE_HEALTH_CENTER": {
+      "UUID": "a2e189e2-26fe-102b-80cb-0017a47871b2"
+    },
+    "KIREHE_HOSPITAL": {
+      "UUID": "d79987bd-36e1-41da-b53d-225b1ee7cdd8"
+    },
+    "MAHAMA_HEALTH_CENTER": {
+      "UUID": "8556eb53-11ab-4423-9659-a6c859b39121"
+    },
+    "MULINDI_HEALTH_CENTER": {
+      "UUID": "a2e185c8-26fe-102b-80cb-0017a47871b2"
+    },
+    "MUSAZA_HEALTH_CENTER": {
+      "UUID": "431e715c-b98e-4eae-819b-5f94b147fced"
+    },
+    "MUSHIKIRI_HEALTH_CENTE": {
+      "UUID": "b5bbea30-ce75-48e2-b3d6-6c7153d33b01"
+    },
+    "NASHO_HEALTH_CENTER": {
+      "UUID": "caf49ac0-53b6-4191-9267-dbf48df7eac2"
+    },
+    "NDEGO_HEALTH_CENTER": {
+      "UUID": "a2e19a9a-26fe-102b-80cb-0017a47871b2"
+    },
+    "NSINDA_PRISON": {
+      "UUID": "87c9b99f-4143-4c2d-a1a1-96af8d19f7b9"
+    },
+    "NTARUKA_HEALTH_CENTER": {
+      "UUID": "e9fdcfce-4ee6-44af-8406-640d07c2a3aa"
+    },
+    "NYABITARE_HEALTH_CENTER": {
+      "UUID": "bcdea72e-9dcb-4a7b-a072-4f766ee54e9d"
+    },
+    "NYAMIRAMA_HEALTH_CENTER": {
+      "UUID": "7fe8333e-c4e0-46c1-b92d-51cd865e1710"
+    },
+    "NYARUBUYE_HEALTH_CENTER": {
+      "UUID": "a2e181c2-26fe-102b-80cb-0017a47871b2"
+    },
+    "RUKIRA_HEALTH_CENTER": {
+      "UUID": "a2e187f8-26fe-102b-80cb-0017a47871b2"
+    },
+    "RURAMIRA_HEALTH_CENTER": {
+      "UUID": "a30b5a9e-b614-49fd-a69c-38eb05042acd"
+    },
+    "RUSUMO_HEALTH_CENTER": {
+      "UUID": "a2e19072-26fe-102b-80cb-0017a47871b2"
+    },
+    "RUTARE_HEALTH_CENTER": {
+      "UUID": "752d59fb-4b72-47b1-bc13-b03fe513dd8d"
+    },
+    "RWANTONDE_HEALTH_CENTER": {
+      "UUID": "1a341da9-6827-4bb2-8047-4324b904bd4a"
+    },
+    "RWINKWAVU_HEALTH_CENTER": {
+      "UUID": "a2e183d4-26fe-102b-80cb-0017a47871b2"
+    },
+    "RWINKWAVU_HOSPITAL": {
+      "UUID": "38c4b94b-97a6-4f2c-bca6-c28a37cf60ed"
+    },
+    "UNKNOWN": {
+      "UUID": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+    },
+    "RETIRED_BURERA": {
+      "UUID": "e43f9620-3362-4134-adcd-cab15afad649"
+    },
+    "RETIRED_DELETE": {
+      "UUID": "873605f2-ce91-46a1-969c-739342bf1b1d"
+    },
+    "RETIRED_GASIZA": {
+      "UUID": "a2e19892-26fe-102b-80cb-0017a47871b2"
+    },
+    "RETIRED_RUHENGERI": {
+      "UUID": "a2e1946e-26fe-102b-80cb-0017a47871b2"
+    },
+    "RETIRED_RWANDA": {
+      "UUID": "a2e1925c-26fe-102b-80cb-0017a47871b2"
+    },
+    "RETIRED_TEST_LOCATION": {
+      "UUID": "2f72a28a-1379-4eca-928e-7732fa624282"
+    },
+    "INMAN_HOSPITAL": {
+      "UUID": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+    }
+  }
+}

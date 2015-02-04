@@ -23,7 +23,7 @@
                         </goals>
                         <configuration>
                             <outputPackage>${project.parent.groupId}.${project.parent.artifactId}.reference</outputPackage>
-                            <metadataDirectory>src/main/configuration/constants</metadataDirectory>
+                            <metadataDirectory>src/main/configuration</metadataDirectory>
                         </configuration>
                     </execution>
                 </executions>
