@@ -17,6 +17,7 @@ package org.openmrs.module.imbmetadata.deploy.bundle;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openmrs.module.imbmetadata.reference.Locations;
+import org.openmrs.module.imbmetadata.reference.MetadataSharingPackages;
 import org.openmrs.module.metadatadeploy.bundle.AbstractMetadataBundle;
 import org.springframework.stereotype.Component;
 
@@ -46,6 +47,7 @@ public class CoreMetadataBundle extends ImbMetadataBundle {
 	public void install() {
 		log.info("Installing Core Metadata");
 		installLocations();
+        installConcepts();
 	}
 
 	public void installLocations() {
@@ -103,4 +105,11 @@ public class CoreMetadataBundle extends ImbMetadataBundle {
         //DB Test Location
         install(location("Inman Health Center","Inman Health Center", Locations.INMAN_HOSPITAL));
 	}
+
+    public void installConcepts() {
+        installMetadataSharingPackage(MetadataSharingPackages.DIAGNOSIS_CONCEPT_SET_NAME + "-"
+                + MetadataSharingPackages.DIAGNOSIS_CONCEPT_SET_VERSION + ".zip",
+                MetadataSharingPackages.DIAGNOSIS_CONCEPT_SET_UUID);
+
+    }
 }

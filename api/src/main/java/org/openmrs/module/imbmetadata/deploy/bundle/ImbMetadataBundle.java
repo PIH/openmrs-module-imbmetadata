@@ -22,6 +22,7 @@ import org.openmrs.OrderType;
 import org.openmrs.api.AdministrationService;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.metadatadeploy.bundle.AbstractMetadataBundle;
+import org.openmrs.module.metadatasharing.ImportMode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
@@ -106,7 +107,7 @@ public abstract class ImbMetadataBundle extends AbstractMetadataBundle {
 			log.warn("Skipping refresh of MDS package: " + filename);
 			return false;
 		}
-		install(packageFile(filename, null, groupUuid));
+		install(packageFile(filename, null, groupUuid, ImportMode.PARENT_AND_CHILD));
 		return true;
 	}
 
