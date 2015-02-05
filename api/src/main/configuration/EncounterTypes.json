@@ -1,0 +1,121 @@
+{
+  "EncounterTypes": {
+    "ACCOMPAGNATEUR_MED_PICKUP": {
+      "UUID": "4d912c22-26fe-102b-80cb-0017a47871b2"
+    },
+    "ADULT_12_MONTH_VISIT": {
+      "UUID": "4d912e98-26fe-102b-80cb-0017a47871b2"
+    },
+    "ADULT_6_MONTH_VISIT": {
+      "UUID": "4d912d4e-26fe-102b-80cb-0017a47871b2"
+    },
+    "ADULT_HIV": {
+      "UUID": "c1c39e98-2f2d-432b-8cc9-b2f273209c29"
+    },
+    "ADULT_INITIAL_VISIT": {
+      "UUID": "4d911d04-26fe-102b-80cb-0017a47871b2"
+    },
+    "ADULT_RETURN_VISIT": {
+      "UUID":  "4d911f5c-26fe-102b-80cb-0017a47871b2"
+    },
+    "ASTHMA_VISIT": {
+      "UUID":  "820004cd-5f2b-40a9-bf26-bf6f5a945790"
+    },
+    "DIABETES_VISIT": {
+      "UUID":  "d8327a41-a0cc-49c5-af0e-63f0ba960330"
+    },
+    "DIAGNOSIS": {
+      "UUID":  "e9355a6e-b2df-44b4-911c-104c6a41ed24"
+    },
+    "EPILEPSY_VISIT": {
+      "UUID":  "7e51bf4c-1276-48e3-8b8c-eaa1dd0a6dca"
+    },
+    "EXPOSED_INFANT": {
+      "UUID":  "f7776201-dfaa-4890-bf9d-080c1639f991"
+    },
+    "EXTERNAL_ONCOLOGY": {
+      "UUID":  "570556f2-7080-49f6-9ef3-301feb313896"
+    },
+    "FINDINGS": {
+      "UUID":  "76162246-15d8-43b0-9666-5884ad1e2be4"
+    },
+    "HEART_FAILURE": {
+      "UUID":  "d889bcb3-c99d-4648-a3ea-b373335b9efd"
+    },
+    "HOME_VISIT": {
+      "UUID":  "4d912fce-26fe-102b-80cb-0017a47871b2"
+    },
+    "HYPERTENSION_VISIT": {
+      "UUID":  "2f75f29f-454d-4e91-915c-ec3fd49532b1"
+    },
+    "INPATIENT_ONCOLOGY": {
+      "UUID":  "0b3925f9-0336-47a6-931e-5c356e9cc82f"
+    },
+    "LAB_TEST": {
+      "UUID": "4d912ae2-26fe-102b-80cb-0017a47871b2"
+    },
+    "MALNUTRITION_INITIAL_VISIT": {
+      "UUID":  "4d912736-26fe-102b-80cb-0017a47871b2"
+    },
+    "NON_CLINICAL_ONCOLOGY": {
+      "UUID":  "b1c2d207-7221-4c23-b580-6c5de5385847"
+    },
+    "NUTRITIONAL_VISIT": {
+      "UUID":  "4d912876-26fe-102b-80cb-0017a47871b2"
+    },
+    "OUTPATIENT_ONCOLOGY": {
+      "UUID":  "ff319885-3f20-4ae5-8663-3ad5678cba41"
+    },
+    "PATIENT_FOLLOW_UP": {
+      "UUID":  "166da42f-4595-445c-8f8a-f815fe9a47ec"
+    },
+    "PATIENT_TRANSFER": {
+      "UUID":  "504ca1b7-ae18-434a-89d9-cf80f1ad3407"
+    },
+    "PDC_VISIT": {
+      "UUID":  "71826dd4-330d-4548-9fd8-6703682fbd3a"
+    },
+    "PEDIATRIC_HIV": {
+      "UUID":  "5e8fecc0-0cae-43a2-896d-9f8477e16392"
+    },
+    "PEDIATRIC_INITIAL_VISIT": {
+      "UUID":  "4d9120ba-26fe-102b-80cb-0017a47871b2"
+    },
+    "PEDIATRIC_RETURN_VISIT": {
+      "UUID":  "4d91222c-26fe-102b-80cb-0017a47871b2"
+    },
+    "POST_CARDIAC_SURGERY_VISIT": {
+      "UUID":  "93c83fb3-52c8-462f-a9e7-58c463906ed5"
+    },
+    "REGIMEN_CHANGE": {
+      "UUID":  "4d91236c-26fe-102b-80cb-0017a47871b2"
+    },
+    "REGISTRATION": {
+      "UUID":  "cfe614d5-fa7e-4919-b76b-a66117f57e4c"
+    },
+    "VITALS": {
+      "UUID":  "daf32375-d293-4e27-a68d-2a58494c96e1"
+    },
+    "RETIRED_ADHERENCE_SURVEY": {
+      "UUID": "d867ca1c-0104-4768-87a7-14333d395da1"
+    },
+    "RETIRED_ADULT_INITIAL_VISIT": {
+      "UUID": "3caf2350-98f3-483e-9c99-bfb59f0198d3"
+    },
+    "RETIRED_ADULT_RETURN_VISIT": {
+      "UUID":  "51513701-76d0-44cc-9f44-0bfdeaeda78b"
+    },
+    "RETIRED_PEDIATRIC_INITIAL_VISIT": {
+      "UUID":  "2a5a22ba-6253-44b5-b752-357bb84c8620"
+    },
+    "RETIRED_PILL_COUNT": {
+      "UUID":  "172f299f-0ccd-40fd-ae0a-42784f204ca3"
+    },
+    "RETIRED_PSYCHOSOCIAL_AND_INDIRECT_BENEFITS": {
+      "UUID":  "4d9129b6-26fe-102b-80cb-0017a47871b2"
+    },
+    "RETIRED_RETROSPECTIVE_DATA_COLLECTION": {
+      "UUID":  "2955334b-f28d-45f9-b8b0-7c1fde76d325"
+    }
+  }
+}
