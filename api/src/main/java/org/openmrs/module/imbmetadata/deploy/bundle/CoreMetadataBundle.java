@@ -16,6 +16,7 @@ package org.openmrs.module.imbmetadata.deploy.bundle;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.openmrs.module.imbmetadata.reference.EncounterTypes;
 import org.openmrs.module.imbmetadata.reference.Locations;
 import org.openmrs.module.imbmetadata.reference.MetadataSharingPackages;
 import org.openmrs.module.metadatadeploy.bundle.AbstractMetadataBundle;
@@ -29,6 +30,7 @@ import static org.openmrs.module.imbmetadata.reference.LocationTags.ALL;
 import static org.openmrs.module.imbmetadata.reference.LocationTags.LOGIN_LOCATION;
 import static org.openmrs.module.imbmetadata.reference.LocationTags.TRANSFER_LOCATION;
 import static org.openmrs.module.imbmetadata.reference.LocationTags.VISIT_LOCATION;
+import static org.openmrs.module.metadatadeploy.bundle.CoreConstructors.encounterType;
 import static org.openmrs.module.metadatadeploy.bundle.CoreConstructors.location;
 import static org.openmrs.module.metadatadeploy.bundle.CoreConstructors.locationTag;
 
@@ -46,11 +48,18 @@ public class CoreMetadataBundle extends ImbMetadataBundle {
 	@Override
 	public void install() {
 		log.info("Installing Core Metadata");
+        installEncounterTypes();
 		installLocations();
         installConcepts();
 	}
 
-	public void installLocations() {
+    private void installEncounterTypes() {
+        log.info("Installing Encounter Types");
+
+        install(encounterType(EncounterTypes.ADMISSION.NAME, EncounterTypes.ADMISSION.DESCRIPTION, EncounterTypes.ADMISSION.UUID));
+    }
+
+    public void installLocations() {
 
 		log.info("Installing Location Tags");
 

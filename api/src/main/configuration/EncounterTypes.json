@@ -116,6 +116,11 @@
     },
     "RETIRED_RETROSPECTIVE_DATA_COLLECTION": {
       "UUID":  "2955334b-f28d-45f9-b8b0-7c1fde76d325"
+    },
+    "ADMISSION": {
+      "UUID":  "260566e1-c909-4d61-a96f-c1019291a09d",
+      "NAME": "Admission Encounter",
+      "DESCRIPTION": "Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged."
     }
   }
 }
