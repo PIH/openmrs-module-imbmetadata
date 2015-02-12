@@ -121,6 +121,21 @@
       "UUID":  "260566e1-c909-4d61-a96f-c1019291a09d",
       "NAME": "Admission Encounter",
       "DESCRIPTION": "Indicates that the patient has been admitted for inpatient care, and is not expected to leave the hospital unless discharged."
+    },
+    "CHECK_IN": {
+      "UUID":  "55a0d3ea-a4d7-4e88-8f01-5aceb2d3c61b",
+      "NAME": "Check-in Encounter",
+      "DESCRIPTION": "Check-in encounter, formerly known as Primary care reception"
+    },
+    "TRANSFER_WITHIN_HOSPITAL": {
+      "UUID":  "436cfe33-6b81-40ef-a455-f134a9f7e580",
+      "NAME": "Transfer within hospital",
+      "DESCRIPTION": "Indicates that a patient is being transferred into a different department within the hospital. (Transfers out of the hospital should not use this encounter type.)"
+    },
+    "EXIT_FROM_INPATIENT": {
+      "UUID":  "b6631959-2105-49dd-b154-e1249e0fbcd7",
+      "NAME": "Exit from inpatient Encounter",
+      "DESCRIPTION": "Indicates that a patient's inpatient care at the hospital is ending, and they are expected to leave soon."
     }
   }
 }

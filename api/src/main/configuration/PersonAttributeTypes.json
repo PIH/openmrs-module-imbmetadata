@@ -1,0 +1,20 @@
+{
+    "PersonAttributeType": {
+        "TEST_PATIENT": {
+            "UUID":  "4f07985c-88a5-4abd-aa0c-f3ec8324d8e7",
+            "NAME": "Test Patient",
+            "DESCRIPTION": "Flag to describe if the patient was created to a test or not",
+            "FORMAT": "java.lang.Boolean",
+            "SEARCHABLE": false,
+            "SORT_WEIGHT": 14
+        },
+        "UNKNOWN_PATIENT": {
+            "UUID":  "8b56eac7-5c76-4b9c-8c6f-1deab8d3fc47",
+            "NAME": "Unknown patient",
+            "DESCRIPTION": "Used to flag patients that cannot be identified during the check-in process",
+            "FORMAT": "java.lang.String",
+            "SEARCHABLE": false,
+            "SORT_WEIGHT": 13
+        }
+    }
+}

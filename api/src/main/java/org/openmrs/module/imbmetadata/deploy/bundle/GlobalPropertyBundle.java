@@ -46,9 +46,9 @@ public class GlobalPropertyBundle extends ImbMetadataBundle {
 
 		// TODO: Fill these in once they are defined and created
 		properties.put(EmrApiConstants.GP_ADMISSION_ENCOUNTER_TYPE, EncounterTypes.ADMISSION.UUID);
-		properties.put(EmrApiConstants.GP_TRANSFER_WITHIN_HOSPITAL_ENCOUNTER_TYPE, "");
-		properties.put(EmrApiConstants.GP_EXIT_FROM_INPATIENT_ENCOUNTER_TYPE, "");
-		properties.put(EmrApiConstants.GP_CHECK_IN_ENCOUNTER_TYPE, "");
+		properties.put(EmrApiConstants.GP_TRANSFER_WITHIN_HOSPITAL_ENCOUNTER_TYPE, EncounterTypes.TRANSFER_WITHIN_HOSPITAL.UUID);
+		properties.put(EmrApiConstants.GP_EXIT_FROM_INPATIENT_ENCOUNTER_TYPE, EncounterTypes.EXIT_FROM_INPATIENT.UUID);
+		properties.put(EmrApiConstants.GP_CHECK_IN_ENCOUNTER_TYPE, EncounterTypes.CHECK_IN.UUID);
 		properties.put(EmrApiConstants.GP_AT_FACILITY_VISIT_TYPE, "");
 		properties.put(EmrApiConstants.GP_DIAGNOSIS_SET_OF_SETS, "");
 

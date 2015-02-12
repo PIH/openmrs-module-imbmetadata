@@ -19,6 +19,7 @@ import org.apache.commons.logging.LogFactory;
 import org.openmrs.module.imbmetadata.reference.EncounterTypes;
 import org.openmrs.module.imbmetadata.reference.Locations;
 import org.openmrs.module.imbmetadata.reference.MetadataSharingPackages;
+import org.openmrs.module.imbmetadata.reference.PersonAttributeType;
 import org.openmrs.module.metadatadeploy.bundle.AbstractMetadataBundle;
 import org.springframework.stereotype.Component;
 
@@ -33,6 +34,7 @@ import static org.openmrs.module.imbmetadata.reference.LocationTags.VISIT_LOCATI
 import static org.openmrs.module.metadatadeploy.bundle.CoreConstructors.encounterType;
 import static org.openmrs.module.metadatadeploy.bundle.CoreConstructors.location;
 import static org.openmrs.module.metadatadeploy.bundle.CoreConstructors.locationTag;
+import static org.openmrs.module.metadatadeploy.bundle.CoreConstructors.personAttributeType;
 
 /**
  * Core metadata bundle that is common across entire distribution
@@ -49,14 +51,38 @@ public class CoreMetadataBundle extends ImbMetadataBundle {
 	public void install() {
 		log.info("Installing Core Metadata");
         installEncounterTypes();
+        installPersonAttributeTypes();
 		installLocations();
         installConcepts();
 	}
+
+    private void installPersonAttributeTypes() {
+        log.info("Installing Person Attribute Types");
+
+        install(personAttributeType(PersonAttributeType.TEST_PATIENT.NAME,
+                PersonAttributeType.TEST_PATIENT.DESCRIPTION,
+                Boolean.class,
+                null,
+                new Boolean(PersonAttributeType.TEST_PATIENT.SEARCHABLE).booleanValue(),
+                new Double(PersonAttributeType.TEST_PATIENT.SORT_WEIGHT),
+                PersonAttributeType.TEST_PATIENT.UUID));
+
+        install(personAttributeType(PersonAttributeType.UNKNOWN_PATIENT.NAME,
+                PersonAttributeType.UNKNOWN_PATIENT.DESCRIPTION,
+                String.class,
+                null,
+                new Boolean(PersonAttributeType.UNKNOWN_PATIENT.SEARCHABLE).booleanValue(),
+                new Double(PersonAttributeType.UNKNOWN_PATIENT.SORT_WEIGHT),
+                PersonAttributeType.UNKNOWN_PATIENT.UUID));
+    }
 
     private void installEncounterTypes() {
         log.info("Installing Encounter Types");
 
         install(encounterType(EncounterTypes.ADMISSION.NAME, EncounterTypes.ADMISSION.DESCRIPTION, EncounterTypes.ADMISSION.UUID));
+        install(encounterType(EncounterTypes.CHECK_IN.NAME, EncounterTypes.CHECK_IN.DESCRIPTION, EncounterTypes.CHECK_IN.UUID));
+        install(encounterType(EncounterTypes.TRANSFER_WITHIN_HOSPITAL.NAME, EncounterTypes.TRANSFER_WITHIN_HOSPITAL.DESCRIPTION, EncounterTypes.TRANSFER_WITHIN_HOSPITAL.UUID));
+        install(encounterType(EncounterTypes.EXIT_FROM_INPATIENT.NAME, EncounterTypes.EXIT_FROM_INPATIENT.DESCRIPTION, EncounterTypes.EXIT_FROM_INPATIENT.UUID));
     }
 
     public void installLocations() {
