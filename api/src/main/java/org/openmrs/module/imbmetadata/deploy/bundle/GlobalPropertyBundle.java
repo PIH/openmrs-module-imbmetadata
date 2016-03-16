@@ -16,12 +16,9 @@ package org.openmrs.module.imbmetadata.deploy.bundle;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.openmrs.module.emrapi.EmrApiConstants;
-import org.openmrs.module.imbmetadata.reference.EncounterTypes;
 import org.openmrs.module.metadatadeploy.bundle.AbstractMetadataBundle;
 import org.springframework.stereotype.Component;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -41,16 +38,6 @@ public class GlobalPropertyBundle extends ImbMetadataBundle {
 		log.info("Installing Global Properties");
 
 		Map<String, String> properties = new LinkedHashMap<String ,String>();
-
-		// Configure EMR API Module
-
-		// TODO: Fill these in once they are defined and created
-		properties.put(EmrApiConstants.GP_ADMISSION_ENCOUNTER_TYPE, EncounterTypes.ADMISSION.UUID);
-		properties.put(EmrApiConstants.GP_TRANSFER_WITHIN_HOSPITAL_ENCOUNTER_TYPE, EncounterTypes.TRANSFER_WITHIN_HOSPITAL.UUID);
-		properties.put(EmrApiConstants.GP_EXIT_FROM_INPATIENT_ENCOUNTER_TYPE, EncounterTypes.EXIT_FROM_INPATIENT.UUID);
-		properties.put(EmrApiConstants.GP_CHECK_IN_ENCOUNTER_TYPE, EncounterTypes.CHECK_IN.UUID);
-		properties.put(EmrApiConstants.GP_AT_FACILITY_VISIT_TYPE, "");
-		properties.put(EmrApiConstants.GP_DIAGNOSIS_SET_OF_SETS, "");
 
         setGlobalProperties(properties);
 	}

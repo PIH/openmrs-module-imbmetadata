@@ -30,8 +30,7 @@
 	
 	<properties>
 		<openMRSVersion>1.9.2</openMRSVersion>
-		<metadatadeployVersion>1.4-SNAPSHOT</metadatadeployVersion>
-        <emrapiVersion>1.5-SNAPSHOT</emrapiVersion>
+		<metadatadeployVersion>1.4</metadatadeployVersion>
 		<jacksonVersion>1.5.0</jacksonVersion>
         <metadatasharingVersion>1.1.8</metadatasharingVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -64,13 +63,6 @@
             <groupId>org.openmrs.module</groupId>
             <artifactId>metadatasharing-api-common</artifactId>
             <version>${metadatasharingVersion}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.openmrs.module</groupId>
-            <artifactId>emrapi-api</artifactId>
-            <version>${emrapiVersion}</version>
             <scope>provided</scope>
         </dependency>
 			
